@@ -1,0 +1,124 @@
+Project Report: ATM Interface System Using Python
+
+---
+
+1. Title:
+ATM Interface System Using Python
+
+---
+
+2. Introduction:
+The project simulates a minimal Automated Teller Machine (ATM) interface with the use of Python. Users are facilitated to conduct typical banking transactions like authentication, checking of balance, deposit, withdrawal, and viewing of transaction history. The system is executed via command-line interaction to simulate real-world ATM settings for learning and demonstration purposes.
+
+---
+
+3. Objective:
+The major goal of this project is to:
+
+* Learn about user authentication processes.
+* Create bank account functionalities simulations.
+* Deliver user-friendly interfaces through Python.
+* Display fundamental concepts such as file handling, functions, and object-oriented programming.
+
+---
+
+4. Functional Requirements:
+
+* User authentication using PIN.
+* Balance inquiry option.
+* Deposit cash.
+* Cash withdrawal with validation.
+* Viewing the transaction history.
+* Exit choice.
+
+---
+
+5. Modules Used:
+
+* `account.py`: Manages the Account class with deposit, withdrawal, balance check, and transaction history methods.
+* `atm.py`: Handles the core ATM functionality such as menu display, authentication, and user input.
+* (Future Improvement) `utils.py`: For helper functions like user data loading/saving in JSON format.
+
+---
+
+6. Tools & Technologies:
+
+* Programming Language: Python 3.x
+* IDE: VS Code / PyCharm / IDLE
+* Data Storage: JSON file (for emulating user database)
+
+---
+
+7. Architecture Diagram:
+
++------------------+
+| User Interface |
++------------------+
+|
+```
+v
++------------------+
+| ATM Controller |
+| (atm.py) |
++------------------+
+|
+v
++------------------+
+| Account Module |
+| (account.py) |
++------------------+
+|
+v
++------------------+
+| JSON File |
+| (User Data) |
++------------------+
+
+---
+
+**8. Flowchart:**
+
+```
+START
+|
+[Enter PIN] --(Wrong 3x)--> [Block User]
+|
+[Authenticated?]--No-->[Exit]
+|
+[Show Menu]
+|---[1] Balance---->[Show Balance]
+|---[2] Deposit---->[Ask Amount]->[Update Balance]
+|---[3] Withdraw--->[Ask Amount]->[Check Balance]->[Update or Reject]
+|---[4] History---->[Display Transactions]
+|---[5] Exit-------->[Thank You]
+|
+Repeat until Exit
+
+
+Stay tuned for the next solution.
+
+9. Screenshots:
+(Will be included after implementation testing)
+
+
+
+10. Future Enhancements:
+
+* GUI interface with Tkinter.
+* Multi-user with login from database.
+* Implement fund transfers.
+* Card block functionality after a few attempts.
+
+
+
+11. Conclusion:
+The project provides an insight into how simple programming concepts are applied in reality. It serves as a stepping stone towards more secure and feature-rich banking systems in the future. The modularity and simplicity make it easy to be extended for further features.
+
+
+
+Submitted by:
+S. Vyas
+St. Joseph's College of Engineering
+Applied Data Science Department
+
+Submission Date: (To be filled)
